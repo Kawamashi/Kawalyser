@@ -1,12 +1,14 @@
 # Kawalyser
 
+C’est mon analyseur personnel. Il permet d’obtenir la heatmap, la charge des doigts et des mains, il fait l’analyse des trigrammes et des difficultés inhérentes à une disposition. Il prend en compte l’utilisation d’une [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais) et de caractères placés sous les pouces. Il est compatible avec les layouts adaptatifs utilisant les touches *Repeat* et *Magic* ainsi que des *Clever Keys*, comme [Propergol](https://github.com/Kawamashi/Propergol) :
+
 ![Propergol](https://github.com/Kawamashi/Kawalyser/blob/main/Propergol.png)
 
-C’est mon analyseur personnel. Il permet d’obtenir la heatmap, la charge des doigts et des mains, il fait l’analyse des trigrammes et des difficultés inhérentes à une disposition. Il prend en compte l’utilisation d’une [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais). Il peut également prendre en compte des caractères placés sous les pouces, des touches *Repeat* et *Magic* ainsi que des *Clever Keys*.
 
-Selon moi, une disposition doit être analysée selon 3 axes : la heatmap/charge des doigts, les bigrammes et enfin les trigrammes.
 
 ## Quoi mesurer dans une disposition ?
+
+Selon moi, une disposition doit être analysée selon 3 axes : la heatmap/charge des doigts, les bigrammes et enfin les trigrammes.
 
 ### La heatmap et la charge des doigts
 Dans l’idéal, **les touches les plus utilisées doivent être placées sur les meilleurs emplacements** : les 8 touches de repos du pavé principal, mais aussi les 2 touches en dessous des touches de repos des index, les 2 touches au-dessus des touches de repos des majeurs, et sous les pouces. Pour illustrer ça, voilà la [carte d’accessibilité](https://colemakmods.github.io/mod-dh/model.html) qui a servi pour la conception du *Colemak mod DH* (le précurseur des layouts alternatifs modernes) :
@@ -61,9 +63,9 @@ De la même manière, je cherche les **FSS** (*Full Scissors Skipgrams*), un cis
 ### Charge cognitive
 L’objectif d’une disposition ergonomique est de rendre la frappe aussi confortable que possible. Pour cela, on arrange au mieux les différents caractères. Ergo-L va plus loin grâce à sa [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais). On peut aller encore plus loin en exploitant les possibilités offertes par un clavier programmable, comme par exemple :
 
--	La touche [Repeat](https://docs.qmk.fm/features/repeat_key) : cette touche produit le dernier caractère tapé. Ça permet de transformer les doubles frappes (comme dans ELLE) en enchainements plus confortables. 
--	La touche [Magic](https://getreuer.info/posts/keyboards/alt-layouts/index.html#magic-sturdy) : cette touche produit un caractère ou une série de caractères en fonction du caractère entré précédemment. Elle peut notamment servir à [diminuer les SFB](https://docs.qmk.fm/features/repeat_key#eliminating-sfbs) ou comme raccourci pour des enchainements particulièrement fréquents (ION, MENT).
--	Les [Clever Keys](https://github.com/Kawamashi/qmk_userspace/blob/main/keyboards/splitkb/kyria/rev1/base/keymaps/Kawamashi/clever_keys.c) : c’est un concept personnel. Mon clavier a un buffer des dernières frappes, les Clever Keys me permettent de changer le résultat de la frappe en cours en fonction de celle-ci et du contenu du buffer. Les Clever Keys me permettent de transformer l’intégralité de mon clavier en touches magiques ! Par exemple, quand je tape une voyelle alors que j’ai tapé Q juste avant, le clavier ajoute le U automatiquement entre les 2. 
+-	La touche [Repeat](https://docs.qmk.fm/features/repeat_key) : cette touche produit le dernier caractère tapé. Ça permet de transformer les doubles frappes (comme dans `ELLE`) en enchainements plus confortables. 
+-	La touche [Magic](https://getreuer.info/posts/keyboards/alt-layouts/index.html#magic-sturdy) : cette touche produit un caractère ou une série de caractères en fonction du caractère entré précédemment. Elle peut notamment servir à [diminuer les SFB](https://docs.qmk.fm/features/repeat_key#eliminating-sfbs) ou comme raccourci pour des enchainements particulièrement fréquents (`ION`, `MENT`).
+-	Les [Clever Keys](https://github.com/Kawamashi/qmk_userspace/blob/main/keyboards/splitkb/kyria/rev1/base/keymaps/Kawamashi/clever_keys.c) : c’est un concept personnel. Mon clavier a un buffer des dernières frappes, les Clever Keys me permettent de changer le résultat de la frappe en cours en fonction de celle-ci et du contenu du buffer. Les Clever Keys me permettent de transformer l’intégralité de mon clavier en touches magiques ! Par exemple, quand je tape une voyelle alors que j’ai tapé `Q` juste avant, le clavier ajoute le `U` automatiquement entre les deux. 
 
 Ce genre d’implémentation permet de diminuer les contraintes mécaniques sur les doigts, mais augmente la charge cognitive lors de la frappe. C’est particulièrement vrai lors de l’apprentissage de la disposition. Cependant, après un certain temps, certaines touches magiques deviennent complètement naturelles, la charge cognitive disparait entièrement ou presque, tandis que d’autres restent “lourdes” pour le cerveau. 
 
