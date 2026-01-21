@@ -1,5 +1,7 @@
 # Kawalyser
 
+![Propergol](https://github.com/Kawamashi/Kawalyser/blob/main/Propergol.png)
+
 C’est mon analyseur personnel. Il permet d’obtenir la heatmap, la charge des doigts et des mains, il fait l’analyse des trigrammes et des difficultés inhérentes à une disposition. Il prend en compte l’utilisation d’une [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais). Il peut également prendre en compte des caractères placés sous les pouces, des touches *Repeat* et *Magic* ainsi que des *Clever Keys*.
 
 Selon moi, une disposition doit être analysée selon 3 axes : la heatmap/charge des doigts, les bigrammes et enfin les trigrammes.
@@ -70,9 +72,12 @@ Même une fois que la disposition est acquise, il reste toujours un travail inte
 Le pourcentage d’utilisation de la touche morte, des touches Repeat et Magic ainsi que des Clever Keys permet d’avoir une idée grossière de la charge cognitive induite par une disposition.
 
 ## Kawalyser
-C’est mon analyseur perso. Il permet d’obtenir la heatmap, la charge des doigts et des mains, il fait l’analyse des trigrammes et des difficultés inhérentes à une disposition. Il prend en compte l’utilisation d’une touche morte de type Lafayette (notée `&`). Il peut également prendre en compte l’utilisation de lettres sous les pouces, des touches *Repeat* (notée `$`) et *Magic* (notée `€`) ainsi que des *Clever Keys*.
+Comme je l’ai dit en introduction, Kawalyser permet d’obtenir la heatmap, la charge des doigts et des mains, il fait l’analyse des trigrammes et des difficultés inhérentes à une disposition. Il prend en compte l’utilisation d’une touche morte de type Lafayette (notée `&`). Il peut également prendre en compte l’utilisation de lettres sous les pouces, des touches *Repeat* (notée `$`) et *Magic* (notée `€`) ainsi que des *Clever Keys*.
 
 En plus des difficultés dont j’ai parlé précédemment (SFB, ciseaux, LSB, mauvaises redirections, etc), Kawalyser donne un “score” de séquence de même main : plus ce nombre est élevé, plus la disposition a tendance à faire travailler une seule main pendant de longues séquences (3 lettres en redirection, ou séquences de 4 lettres ou plus). 
 
 De plus, Kawalyser permet de se faire une idée des doigts sur lesquels sont concentrées les difficultés. En effet, lorsqu’on tape un ciseau, c’est le dernier caractère qui est pénible pour les doigts. Pour obtenir le graphique résultat, j’affecte des coefficients aux différentes difficultés : un demi-ciseau ne doit pas autant compter qu’un SFB, par exemple ! Je ne prétends pas que cette pondération soit parfaite, mais je pense que le graphique permet de mettre en lumière si les difficultés affectent plus particulièrement les doigts faibles.
 
+Pour l’instant, Kawalyser est codé en VBA, à ma plus grande honte. Je projette de le porter en Python d’ici peu. Vous trouverez les analyses de différents layouts dans ce repo. 
+
+N’hésitez pas à me contacter pour toutes questions ou suggestions !
