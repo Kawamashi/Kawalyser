@@ -9,12 +9,12 @@ Selon moi, une disposition doit être analysée selon 3 axes : la heatmap/charge
 ## Quoi mesurer dans une disposition ?
 
 ### La heatmap et la charge des doigts
-Dans l’idéal, **les touches les plus utilisées doivent être placées sur les meilleurs emplacements** : les 8 touches de repos du pavé principal, mais aussi les 2 touches en dessous des touches de repos des index, les 2 touches au-dessus des touches de repos des majeurs, et sous les pouces. Pour illustrer ça, voilà la [carte d’accessibilité](https://colemakmods.github.io/mod-dh/model.html) qui a servi pour la conception du *Colemak mod DH* (le précurseur des layouts alternatifs modernes) :
+Dans l’idéal, **les touches les plus utilisées doivent être placées sur les meilleurs emplacements** : les 8 touches de repos du pavé principal, mais aussi les 2 touches en dessous des touches de repos des index, les 2 touches au-dessus des touches de repos des majeurs, et sous les pouces. Pour illustrer ça, voilà la [carte d’accessibilité](https://colemakmods.github.io/mod-dh/model.html) qui a servi pour la conception du *Colemak mod DH* (le précurseur des layouts alternatifs modernes) :
 
  ![access](https://colemakmods.github.io/mod-dh/gfx/model/keyb_calc_matrix_fingers.png)
 
 
-Je suis globalement d’accord avec cette carte, mais **l’accessibilité des touches reste quelque chose de très personnel** : perso mes auriculaires ne sont pas plus fragiles que ça mais je n’aime pas trop faire bosser mes annulaires. Je trouve que la touche en dessous de la touche de repos des auriculaires est plus accessible que la touche au-dessus de la touche de repos des auriculaires, et ça se ressent sur toutes mes dispositions. Pour certaines personnes, c’est l’inverse. De même, les scores de la touche au-dessus de la touche de repos des index et de la touche à l’intérieur (notée 2.2 et 2.9 respectivement) sont très subjectifs.
+Je suis globalement d’accord avec cette carte, mais **l’accessibilité des touches reste quelque chose de très personnel** : perso mes auriculaires ne sont pas plus fragiles que ça mais je n’aime pas trop faire bosser mes annulaires. Je trouve que la touche en dessous de la touche de repos des auriculaires est plus accessible que la touche au-dessus de la touche de repos des auriculaires, et ça se ressent sur toutes mes dispositions. Pour certaines personnes, c’est l’inverse. De même, les scores de la touche au-dessus de la touche de repos des index et de la touche à l’intérieur (notée 2.2 et 2.9 respectivement) sont très subjectifs.
 
 La charge des doigts est également à prendre en compte : dans l’idéal, **les doigts forts (pouces, index et majeurs) doivent être plus utilisés que les doigts faibles (annulaires et auriculaires)**. Il faut noter qu’il vaut mieux éviter les appuis successifs avec les pouces et les auriculaires.
 
