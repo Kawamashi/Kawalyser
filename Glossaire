@@ -1,0 +1,1 @@
+**SFB** : *Same-Finger Bigram*, deux touches différentes à enchainer avec le même doigt.  
