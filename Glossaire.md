@@ -10,7 +10,7 @@ Tous les exemples sont considérés en Azerty sauf si précisé autrement.
 
 - **SFS** (*Same Finger Skipgrams*) : deux touches différentes à enchainer avec le même doigt, avec une touche d’un autre doigt à taper entre les deux (ex : `JEU`).
   
-- **STS** (*Same Thumb Spacegrams*) :  cas particulier de SFS quand le premier ou le dernier caractère est un espace (ex : `␣L’` en Propergol).
+- **STS** (*Same Thumb Spacegrams*) :  similaire à un SFS, avec un espace comme premier ou dernier caractère (ex : `␣L’` en Propergol).
 
 - **LSB** (*Lateral Stretch Bigram*) : enchainement de deux touches tapées par des doigts adjacents impliquant un déplacement latéral de l’un des doigts (ex : `ET`). Voir [ici](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o/edit?tab=t.i8oe0bwffr95) pour plus d’infos.
   
