@@ -1,26 +1,31 @@
--	**SKB** (*Same-Key Bigram*) : répétition d’une même touche (ex : `LL` en AZERTY). Le nombre de SKB peut augmenter avec l’utilisation d’une [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais) (ex : `ÉS` en Ergo-L).
+-	**SKB** (*Same-Key Bigram*) : répétition d’une même touche (ex : `LL` en Azerty). Le nombre de SKB peut augmenter avec l’utilisation d’une [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais) (ex : `ÉS` en Ergo-L).
 
-- **SFB** (*Same-Finger Bigram*) : deux touches différentes à enchainer avec le même doigt. Ex : `DE`
+- **SFB** (*Same-Finger Bigram*) : deux touches différentes à enchainer avec le même doigt (ex : `DE` en Azerty).
 
-- **SFS** (*Same Finger Skipgrams*) : deux touches différentes à enchainer avec le même doigt, avec une touche d’un autre doigt à taper entre les deux. Ex : `JEU` en AZERTY.
+- **SFS** (*Same Finger Skipgrams*) : deux touches différentes à enchainer avec le même doigt, avec une touche d’un autre doigt à taper entre les deux (ex : `JEU` en Azerty).
   
-- **STS** (*Same Thumb Spacegrams*) :  cas particulier de SFS quand le premier ou le dernier caractère est un espace. 
+- **STS** (*Same Thumb Spacegrams*) :  cas particulier de SFS quand le premier ou le dernier caractère est un espace (ex : `␣L’` en Propergol).
+
+- **LSB** (*Lateral Stretch Bigram*) : enchainement de deux touches tapées par des doigts adjacents impliquant un déplacement latéral de l’un des doigts (ex : `ET` en Azerty). Voir [ici](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o/edit?tab=t.i8oe0bwffr95) pour plus d’infos.
   
--	**FSB** (*Full-Scissor Bigram*) : 
+-	**FSB** (*Full-Scissor Bigram*) : bigrammes dont l’une des deux lettres est sur la rangée du haut et l’autre sur celle du bas, avec les doigts qui “se plient dans le mauvais sens” (ex : le majeur en bas et l’annulaire en haut, `CZ` en Azerty). Voir [ici](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o/edit?tab=t.3j7hpqkn3etl) pour plus d’infos.
+
+-	**HSB** (*Half-Scissor Bigram*) : bigramme dont l’une des deux lettres est sur la rangée de repos mais pas l’autre, avec les doigts qui “se plient dans le mauvais sens” (ex : `CF` en Azerty).
   
--	**HSB** (*Half-Scissor Bigram*) : 
--	**RJB** (*Row-Jump Bigram*) :  (enchainement plus ou moins inconfortable de deux touches sur des rangées différentes. La définition des ciseaux n’est pas la même pour tout le monde. Pour en savoir plus, je conseille de lire le [chapitre correspondant](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o/edit?tab=t.3j7hpqkn3etl) du Keyboard layouts doc. De manière complémentaire aux ciseaux, je mesure les bigrammes “saut de ligne” (RJB). Ce sont des bigrammes dont l’une des deux lettres est sur la rangée du haut et l’autre sur celle du bas, avec les doigts qui “se plient dans le bon sens” (ex : l’index en bas et le majeur en haut).  
--	Les **LSB** (*Lateral Stretch Bigram*) : enchainement de deux touches avec une touche d’une des colonnes internes (ou externes, pour les layouts utilisant deux colonnes dédiées aux auriculaires). Cf [ici](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o/edit?tab=t.i8oe0bwffr95).
+-	**RJB** (*Row-Jump Bigram*) : bigrammes dont l’une des deux lettres est sur la rangée du haut et l’autre sur celle du bas, avec les doigts qui “se plient dans le bon sens” (ex : l’index en bas et le majeur en haut, `VE` en Azerty).
 
+- **FSS** (*Full Scissors Skipgrams*) : FSB avec une touche tapée par un autre doigt entre les 2 (ex : `COZ` en Azerty).
 
--	**Alternance** : trigramme dont la 1ère et la 3e touche sont tapées avec une main, et la 2e avec l’autre main. Ex : `PAI` en AZERTY.
--	Les **roulements** : trigramme dont la 1ère et la 2e touche sont tapées avec une main mais pas la 3e, ou dont la 2e et la 3e touche sont tapées avec une main, mais pas la 1ère. Ex : `FOU` et `IOD` en AZERTY.
--	Les **3 rolls** (également appelés **onehand** par certains analyseurs) : quand les 3 touches sont sur la même main et qu’elles vont dans le même sens. Ex : `REA` en AZERTY.
--	Les **redirections** : quand les 3 touches sont sur la même main, avec un changement de direction au milieu. Ex : `PIL` et `ILU` en AZERTY.
+-	**Alternance** : trigramme dont la 1ère et la 3e touche sont tapées avec une main, et la 2e avec l’autre main (ex : `PAI` en Azerty).
+  
+-	**Roulements** : trigramme dont la 1ère et la 2e touche sont tapées avec une main mais pas la 3e, ou dont la 2e et la 3e touche sont tapées avec une main, mais pas la 1ère (ex : `FOU` et `IOD` en Azerty).
+  
+-	**3 rolls** (également appelés **Onehand** par certains analyseurs) : trigrammes dont les trois touches sont sur la même main et allant dans la même direction (ex : `REA` en Azerty).
+  
+-	**Redirections** : trigrammes dont les 3 touches sont sur la même main, avec un changement de direction au milieu (ex : `ILU` en Azerty).
 
--	Le pourcentage d’utilisation de la touche morte, des touches Repeat et Magic ainsi que des Clever Keys permet d’avoir une idée grossière de la charge cognitive induite par une disposition.
+- **Mauvaises redirections** : cas particulier de redirection n’impliquant ni pouce ni index (ex : `PIL` en Azerty).
 
--	SHS :
+-	**CC** (*Charge Cognitive*) : fréquence d’utilisation de la touche morte, des touches Repeat et Magic ainsi que des Clever Keys.
 
-
-- **FSS** (*Full Scissors Skipgrams*) :  Ciseau avec une touche tapée par un autre doigt entre les 2.
+-	**SHS** (*Same-Hand Sequence*) : Séquences de quatre caractères ou plus tapés avec la même main.
