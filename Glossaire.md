@@ -1,6 +1,10 @@
+-	**SKB** (*Same-Key Bigram*) : répétition d’une même touche (ex : `LL` en AZERTY). Le nombre de SKB peut augmenter avec l’utilisation d’une [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais) (ex : `ÉS` en Ergo-L).
+
 - **SFB** (*Same-Finger Bigram*) : deux touches différentes à enchainer avec le même doigt. Ex : `DE`
 
--	**SKB** (*Same-Key Bigram*) : répétition d’une même touche (ex : `LL` en AZERTY). Le nombre de SKB peut augmenter avec l’utilisation d’une [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais) (ex : `ÉS` en Ergo-L).
+- **SFS** (*Same Finger Skipgrams*) : deux touches différentes à enchainer avec le même doigt, avec une touche d’un autre doigt à taper entre les deux. Ex : `JEU` en AZERTY.
+  
+- **STS** (*Same Thumb Spacegrams*) :  cas particulier de SFS quand le premier ou le dernier caractère est un espace. 
   
 -	**FSB** (*Full-Scissor Bigram*) : 
   
@@ -9,8 +13,8 @@
 -	Les **LSB** (*Lateral Stretch Bigram*) : enchainement de deux touches avec une touche d’une des colonnes internes (ou externes, pour les layouts utilisant deux colonnes dédiées aux auriculaires). Cf [ici](https://docs.google.com/document/d/1W0jhfqJI2ueJ2FNseR4YAFpNfsUM-_FlREHbpNGmC2o/edit?tab=t.i8oe0bwffr95).
 
 
--	Les **alternances** : quand on appuie sur la première touche avec une main, sur la 2e avec l’autre main, et sur la 3e avec la première main. Ex : `PAI` en AZERTY.
--	Les **roulements** : quand la 1ère et la 2e touche sont sur la même main mais pas la 3e, ou quand la 2e et la 3e touche sont sur la même main, mais pas la 1ère. Ex : `FOU` et `IOD` en AZERTY.
+-	**Alternance** : trigramme dont la 1ère et la 3e touche sont tapées avec une main, et la 2e avec l’autre main. Ex : `PAI` en AZERTY.
+-	Les **roulements** : trigramme dont la 1ère et la 2e touche sont tapées avec une main mais pas la 3e, ou dont la 2e et la 3e touche sont tapées avec une main, mais pas la 1ère. Ex : `FOU` et `IOD` en AZERTY.
 -	Les **3 rolls** (également appelés **onehand** par certains analyseurs) : quand les 3 touches sont sur la même main et qu’elles vont dans le même sens. Ex : `REA` en AZERTY.
 -	Les **redirections** : quand les 3 touches sont sur la même main, avec un changement de direction au milieu. Ex : `PIL` et `ILU` en AZERTY.
 
@@ -18,6 +22,5 @@
 
 -	SHS :
 
--	**SFS** (*Same Finger Skipgrams*) : . Ex : `JEU` en AZERTY. 
-- **STS** (*Same Thumb Spacegrams*) :  quand le premier ou le dernier caractère est un espace. 
+
 - **FSS** (*Full Scissors Skipgrams*) :  Ciseau avec une touche tapée par un autre doigt entre les 2.
