@@ -104,11 +104,11 @@ C’est sur cette feuille qu’il faut saisir la disposition à analyser (couche
 
 
 ### La feuille *Ngrams refined*
-Cette feuille permet d’analyser la manière dont on va *vraiment* taper le corpus, en tenant compte des spécificité du layout (1DK, touches *Repeat* et *Magic*, Clever Keys). Par exemple, si vous voulez taper `être`, voilà les caractères que vous devez taper en Azerty : `^` `e` `t` `r` `e`. 
-Le corpus est découpé en mots, en quadigrammes/trigrammes/bigrammes et caractères, ce qui permet de l’analyser en profondeur.
+Cette feuille permet d’analyser la manière dont on va *vraiment* taper le corpus, en tenant compte des spécificité du layout (1DK, touches *Repeat* et *Magic*, Clever Keys). Par exemple, si vous voulez taper `être`, voilà les caractères que vous devez taper en Azerty : `^` `e` `t` `r` `e`. Ce sont ces caractères qui apparaîtront sur la feuille.
+Le corpus y est découpé en mots, en quadigrammes/trigrammes/bigrammes et lettres, ce qui permet de l’analyser en profondeur.
 
 ### La feuille *Difficultés*
-Cette feuille présente toutes les difficultés induites par la disposition (SFB, LSB, ciseaux, SFS, mauvaises redirections, etc). 
+Comme son nom l’indique, cette feuille présente toutes les difficultés induites par la disposition (SFB, LSB, ciseaux, SFS, mauvaises redirections, etc). 
 
 ### La feuille *Analyse*
 
