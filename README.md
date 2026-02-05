@@ -104,7 +104,13 @@ C’est sur cette feuille qu’il faut saisir la disposition à analyser (couche
 
 
 ### La feuille *Ngrams refined*
-Cette feuille est utile pour analyser un corpus
+Cette feuille permet d’analyser la manière dont on va *vraiment* taper le corpus, en tenant compte des spécificité du layout (1DK, touches *Repeat* et *Magic*, Clever Keys). Par exemple, si vous voulez taper `être`, voilà les caractères que vous devez taper en Azerty : `^` `e` `t` `r` `e`. 
+Le corpus est découpé en mots, en quadigrammes/trigrammes/bigrammes et caractères, ce qui permet de l’analyser en profondeur.
+
+### La feuille *Difficultés*
+Cette feuille présente toutes les difficultés induites par la disposition (SFB, LSB, ciseaux, SFS, mauvaises redirections, etc). 
+
+### La feuille *Analyse*
 
 
 De plus, Kawalyser permet de se faire une idée des doigts sur lesquels sont concentrées les difficultés. En effet, lorsqu’on tape un ciseau, c’est le dernier caractère qui est pénible pour les doigts. Pour obtenir le graphique résultat, j’affecte des coefficients aux différentes difficultés : un demi-ciseau ne doit pas autant compter qu’un SFB, par exemple ! Je ne prétends pas que cette pondération soit parfaite, mais je pense que le graphique permet de mettre en lumière si les difficultés affectent plus particulièrement les doigts faibles.
