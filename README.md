@@ -2,6 +2,8 @@
 
 C’est mon analyseur personnel. Il permet d’obtenir la heatmap, la charge des doigts et des mains, il fait l’analyse des trigrammes et des difficultés inhérentes à une disposition. Il prend en compte l’utilisation d’une [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais) et de caractères placés sous les pouces. Il est compatible avec les layouts adaptatifs utilisant les touches *Repeat* et *Magic* ainsi que des *Clever Keys*, comme [Propergol](https://github.com/Kawamashi/Propergol) :
 
+&nbsp;</br>
+
 ![Propergol](Propergol_CK.png)
 
 &nbsp;</br>
@@ -90,8 +92,6 @@ Une bonne disposition ne doit pas fatiguer inutilement les mains, notamment à c
 &nbsp;</br>
 
 ## Kawalyser
-Comme je l’ai dit en introduction, Kawalyser permet d’obtenir la heatmap, la charge des doigts et des mains, il fait l’analyse des trigrammes et des difficultés inhérentes à une disposition. Il prend en compte l’utilisation d’une touche morte de type Lafayette (notée `&`). Il peut également prendre en compte l’utilisation de lettres sous les pouces, des touches *Repeat* (notée `$`) et *Magic* (notée `€`) ainsi que des *Clever Keys*.
-
 Kawalyser se présente sous la forme d’un classeur Excel, dans lequel se trouve plusieurs feuilles.
 
 
@@ -100,20 +100,20 @@ Pas grand-chose à dire, cette feuille contient le corpus et c’est tout. Que c
 
 
 ### La feuille *Layout*
-C’est sur cette feuille qu’il faut saisir la disposition à analyser (couche Lafayette incluse), ainsi que les éventuelles règles magiques. 
+C’est sur cette feuille qu’il faut saisir la disposition à analyser (couche Lafayette incluse), ainsi que les éventuelles règles magiques. La touche 1DK doit être notée `&`, les éventuelles touches *Repeat* et *Magic* doivent être notées respectivement `$` et `€`.
 
 
 ### La feuille *Ngrams refined*
-Cette feuille permet d’analyser la manière dont on va *vraiment* taper le corpus, en tenant compte des spécificité du layout (1DK, touches *Repeat* et *Magic*, Clever Keys). Par exemple, si vous voulez taper `être`, voilà les caractères que vous devez taper en Azerty : `^` `e` `t` `r` `e`. Ce sont ces caractères qui apparaîtront sur la feuille.
-Le corpus y est découpé en mots, en quadigrammes/trigrammes/bigrammes et lettres, ce qui permet de l’analyser en profondeur.
+Quand vous voulez saisir `être` en Azerty, voilà les caractères que vous tapez : `^` `e` `t` `r` `e`. Kawalyser adapte le corpus en fonction de la manière dont on va *vraiment* le taper, en tenant compte des spécificités du layout (1DK, touches *Repeat* et *Magic*, Clever Keys). Pour poursuivre l’analyse, le texte est découpé en mots, en quadigrammes, trigrammes, bigrammes et caractères. La feuille *Ngrams refined* présente le résultat de ce découpage.
+
 
 ### La feuille *Difficultés*
-Comme son nom l’indique, cette feuille présente toutes les difficultés induites par la disposition (SFB, LSB, ciseaux, SFS, mauvaises redirections, etc). 
+Comme son nom l’indique, toutes les difficultés induites par la disposition (SFB, LSB, ciseaux, SFS, mauvaises redirections, etc) sont listées sur cette feuille.
+
 
 ### La feuille *Analyse*
+Cette feuille synthétise les résultats de Kawalyser : heatmap, charge des doigts et des mains, analyse des trigrammes et difficultés. Un graphique permet également de se faire une idée des doigts sur lesquels ces difficultés se concentrent. En effet, lorsqu’on tape un ciseau, c’est le dernier caractère qui est pénible pour les doigts. Pour obtenir ce graphique, j’affecte des coefficients aux différentes difficultés : un demi‑ciseau ne doit pas autant compter qu’un SFB, par exemple ! Je ne prétends pas que cette pondération soit parfaite, mais je pense que cela permet de mettre en évidence si les difficultés affectent plus particulièrement les doigts faibles.
 
-
-De plus, Kawalyser permet de se faire une idée des doigts sur lesquels sont concentrées les difficultés. En effet, lorsqu’on tape un ciseau, c’est le dernier caractère qui est pénible pour les doigts. Pour obtenir le graphique résultat, j’affecte des coefficients aux différentes difficultés : un demi-ciseau ne doit pas autant compter qu’un SFB, par exemple ! Je ne prétends pas que cette pondération soit parfaite, mais je pense que le graphique permet de mettre en lumière si les difficultés affectent plus particulièrement les doigts faibles.
 
 Vous trouverez un glossaire de toutes les abréviations utilisées par Kawalyser [ici](Glossaire.md).
 
