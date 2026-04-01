@@ -1,6 +1,6 @@
 # Kawalyser
 
-C’est mon analyseur personnel. Il permet d’obtenir la heatmap, la charge des doigts et des mains, il fait l’analyse des trigrammes et des difficultés inhérentes à une disposition. Il prend en compte l’utilisation d’une [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais) et de caractères placés sous les pouces. Il est compatible avec les layouts adaptatifs utilisant les touches *Repeat* et *Magic* ainsi que des *Clever Keys*, comme [Propergol](https://github.com/Kawamashi/Propergol) :
+C’est mon analyseur personnel. Il permet d’obtenir la heatmap, la charge des doigts et des mains, il fait l’analyse des trigrammes et des difficultés inhérentes à une disposition. Il prend en compte l’utilisation d’une [touche morte de type Lafayette](https://ergol.org/presentation/#impeccable-en-fran%C3%A7ais) et de caractères placés sous les pouces. Il est compatible avec les layouts adaptatifs utilisant les touches [*Repeat*](https://docs.qmk.fm/features/repeat_key) et [*Magic*](https://getreuer.info/posts/keyboards/alt-layouts/index.html#magic-sturdy) ainsi que des [*Clever Keys*](https://github.com/Kawamashi/qmk_userspace?tab=readme-ov-file#clever-keys), comme [Propergol](https://github.com/Kawamashi/Propergol) :
 
 &nbsp;</br>
 
