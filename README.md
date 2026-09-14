@@ -4,7 +4,7 @@ C’est mon analyseur personnel. Il permet d’obtenir la heatmap, la charge des
 
 &nbsp;</br>
 
-![Propergol](Propergol_CK - fr.png)
+![Propergol](Propergol_CK-fr.png)
 
 &nbsp;</br>
 
